@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+label {
+    display: flex;
+    cursor: pointer;
+    width: 232px;
+}
+
+label input[type=checkbox] {
+    position: absolute;
+    opacity: 0;
+    width:0; 
+    height:0;
+  }
+
+input[type="checkbox"].leftFilter-box:checked + .lefFilter-box__square {
+  background-image: url('../../assets/img/Shape.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 14px;
+  color: blue;
+  left: 3px;
+  top: 1px;
+}
+
+input[type="checkbox"].leftFilter-box:checked + .lefFilter-box__square::after {
+  border-color: #2196F3;
+}
+
+input[type="checkbox"].leftFilter-box:checked:disabled + .lefFilter-box__square {
+  background-image: none;
+  background-color: #E5E5E5;
+  color: #A0B0B9;
+}
+
+label .lefFilter-box__square {
+    width:20px; 
+    height:20px;
+    border: 1px solid #9ABBCE;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.leftFilter-list :hover {
+    background-color: #F1FCFF;
+}
+
+.leftFilter-list .leftFilter-item:last-child:hover {
+    background-color: #F1FCFF;
+    border-radius: 5px;
+}
+
+  label input[type=checkbox]:checked + .lefFilter-box__square:after {
+    border-color: #2196F3;
+  }
+
+.avia-aside {
+    width: 232px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    max-height: 252px;
+}
+
+.leftFilter-name {
+    font-family: 'Open Sans', sans-serif;
+    color: #4A4A4A;
+    padding: 20px 20px 10px 10px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.leftFilter-list {
+    margin: 0;
+    padding: 0;
+}
+
+.leftFilter-item {
+    list-style-type: none;
+    padding: 10px;
+    font-family: 'Open Sans';
+    color: #4A4A4A;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+@media screen { 
+    
+}

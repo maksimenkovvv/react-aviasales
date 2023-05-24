@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+ul {
+    list-style: none;
+}
+
+label input[type=radio] {
+    position: absolute;
+    opacity: 1;
+    width: 50px; 
+    height:50px;
+    display: none;
+  }
+
+.avia-filter {
+    height: 50px;
+    max-width: 502px;
+    border-left: 1px solid #DFE5EC;
+    border-bottom: 1px solid #DFE5EC;
+    border-top: 1px solid #DFE5EC;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 16px;
+}
+
+.mainFilter-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    height: 50px;
+    width: 502px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.mainFilter-item {
+    border-right: 1px solid #DFE5EC;
+    margin: 0px;
+    height: 100%;
+}
+
+.mainFilter-item:hover {
+    border-right: 1px solid #DFE5EC;
+    margin: 0px;
+    height: 100%;
+    background-color: #2196F3;
+}
+
+.mainFilter-item:last-child {
+    border-right: 1px solid #DFE5EC;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: 0px;
+    height: 100%;
+}
+
+.mainFilter-item:hover:first-child {
+    border-right: 1px solid #DFE5EC;
+    margin: 0px;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #2196F3;;
+}
+
+.mainFilter-item:hover:last-child {
+    border-right: 1px solid #DFE5EC;
+    margin: 0px;
+    height: 100%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #2196F3;;
+}
+
+.mainFilter-item__label {
+    display: inline-block;
+    position: relative;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 50px;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    color: #4A4A4A;
+}
+
+.mainFilter-item__label.selected.left {
+    background-color: #2196F3;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.mainFilter-item__label.selected {
+    background-color: #2196F3;
+    color: #fff;
+}
+
+.mainFilter-item__label.selected.right {
+    background-color: #2196F3;
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.mainFilter-item__label:hover {
+    display: inline-block;
+    position: relative;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}

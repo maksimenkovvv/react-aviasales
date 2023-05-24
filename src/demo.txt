@@ -1,0 +1,34 @@
+
+//! 
+> components
+    app
+    asideFilter
+    header
+    mainFilter
+    ticketCard
+    ticketItem
+
+//! 
+> services
+    aviasalesApi
+
+//! store принимает в себя reducer
+> store
+    store.js +
+
+    //! Обновление состояния приложения
+    >> 1) actionCreators 
+        actionTypes.js //! Хранение const для [2, 3 ...]
+        actionCreators.js
+        actionFilter.js
+
+    //! Принимает предыдущее состояние и action [1]
+    >> 2) reducers
+        combineReducer.js
+            filterReducer.js
+            searchReducer.js
+    //! 
+    >> 3) selectors
+        filterSelector.js
+
+index.js +

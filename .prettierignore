@@ -1,0 +1,10 @@
+build
+node_modules
+app.scss
+asideFilter.scss
+header.scss
+mainFilter.scss
+moreTicket.scss
+ticketCard.scss
+ticketItem.scss
+webpack.config.js
